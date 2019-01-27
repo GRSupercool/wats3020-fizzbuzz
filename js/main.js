@@ -8,12 +8,21 @@ let isInteger,
 
 // TODO: Initialize a variable `isInteger` to use as a control value for the
 // `while` loop. Set the initial value to `false`.
-
+isInteger=false;
 // TODO: Create a `while` loop so user will be prompted to enter a number until
 // they enter a good number. This loop should be controlled by a conditional
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
+while(!isInteger){
+    let input=window.prompt('enter a number greater than 0;')
+    if(input===null)break;
+    if(input.indexOf('.')<0 ){
+        maxNumber=Number.parseInt(input);
+        isInteer= number.IsSafeInteger(maxNumber) && maxNumber > 0; 
+        }
+consoleLog=("maxNumber",maxNumber);
 
+}
 // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
 
 // TODO: Inside the `while` loop, use a conditional to verify if the `maxNumber`
