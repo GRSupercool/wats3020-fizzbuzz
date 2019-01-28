@@ -13,16 +13,18 @@ isInteger=false;
 // they enter a good number. This loop should be controlled by a conditional
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
-while(!isInteger){
-    let input=window.prompt('enter a number greater than 0;')
-    if(input===null)break;
-    if(input.indexOf('.')<0 ){
-        maxNumber=Number.parseInt(input);
-        isInteer= number.IsSafeInteger(maxNumber) && maxNumber > 0; 
-        }
-consoleLog=("maxNumber",maxNumber);
 
-}
+while(!isInteger){
+    let input=window.prompt('enter a number greater than 0:');
+    if(input===null)break;
+    if(input.indexOf('.') <0 ){
+        maxNumber=Number.parseInt(input);
+        isInteger= Number.isSafeInteger(maxNumber) && maxNumber > 0; 
+        }
+    }
+    //console.log=("maxNumber", maxNumber);
+
+
 // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
 
 // TODO: Inside the `while` loop, use a conditional to verify if the `maxNumber`
@@ -30,10 +32,25 @@ consoleLog=("maxNumber",maxNumber);
 
 // TODO: If the value of `maxNumber` is suitable, then change the value of
 // `isInteger` so the `while` loop stops looping.
-
 // TODO: Initialize the `fbResults` variable to an empty Array
+fbResult=[];
 
 // TODO: Create a `for` loop that will execute the `maxNumber` of times.
+
+for (let i=1; i<=maxNumber;i++){
+  let outputString= '';
+  if(i % 3 ===0){
+      outputString+="fizz";
+      } else
+// if (i % 5===0){
+ //outString += "buzz";
+ //}
+ //if(i%15){
+    // outputString.length===0){
+        outputString=i;
+    }
+    fbResults.Push(outputString);
+ }
 
 // TODO: Create logic inside the `for` loop to calculate FizzBuzz.  This will
 // require the use of several conditional statements that use the `%` operator.
@@ -44,6 +61,9 @@ consoleLog=("maxNumber",maxNumber);
 
 // TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
 // into the variable `fbText`.
+for(let calue of fbResults){
+    fbText +value+'/n';
+}
 
 
 ///////////////////////////////////////////////////////////////////////
