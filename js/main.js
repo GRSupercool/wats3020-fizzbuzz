@@ -6,13 +6,9 @@ let isInteger,
     fbText;
 
 
-// 
-// 
+
  isInteger=false; 
-// 
-// 
-// 
-// 
+
 
 while(!isInteger){
     let input=window.prompt('Enter a number greater than 0:');
@@ -25,17 +21,9 @@ while(!isInteger){
     console.log=("maxNumber", maxNumber);
 
 
-// TODO: Inside `while` loop prompt the user for the `maxNumber` value.
 
-// TODO: Inside the `while` loop, use a conditional to verify if the `maxNumber`
-// is a suitable integer. (It should be an integer greater than zero.)
-
-// TODO: If the value of `maxNumber` is suitable, then change the value of
-// `isInteger` so the `while` loop stops looping.
-// TODO: Initialize the `fbResults` variable to an empty Array
 fbResults=[];
 
-// TODO: Create a `for` loop that will execute the `maxNumber` of times.
 
 for (let i=1; i<=maxNumber;i++){
   let outputString='';
@@ -56,15 +44,9 @@ if(outputString.length===0){
 fbResults.push('outputString');
  
 
-// TODO: Create logic inside the `for` loop to calculate FizzBuzz.  This will
-// require the use of several conditional statements that use the `%` operator.
-// Store the results of this logic in an array called `fbResults`.
 
-// TODO: In preparation for creating the output text for your FizzBuzz results,
-// initialize the `fbText` variable to an empty string.
 
-// TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
-// into the variable `fbText`.
+
 for( let value of fbResults){
     fbText += value +'/n';
 }
