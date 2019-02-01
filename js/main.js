@@ -15,14 +15,14 @@ let isInteger,
 // 
 
 while(!isInteger){
-    let input=window.prompt('enter a number greater than 0:');
+    let input=window.prompt('Enter a number greater than 0:');
     if(input===null)break;
     if(input.indexOf('.') <0 ){
         maxNumber=Number.parseInt(input);
         isInteger= Number.isSafeInteger(maxNumber) && maxNumber > 0; 
         }
     }
-    //console.log=("maxNumber", maxNumber);
+    console.log=("maxNumber", maxNumber);
 
 
 // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
@@ -38,21 +38,22 @@ fbResults=[];
 // TODO: Create a `for` loop that will execute the `maxNumber` of times.
 
 for (let i=1; i<=maxNumber;i++){
-  let outputString= '';
+  let outputString='';
   if(i % 3 ===0){
       outputString +="fizz";
       } else
-// if (i % 5===0){
-//outputString += "buzz";
+ if (i % 5===0){
+outputString += "buzz";
+}
+
+//if(i 5 15){
+ //   outputString += "fizzbuzz";
 //}
-//if(i%15){
-// outpuString +="fizzbuzz";
-//}
-    
-// outputString.length===0){
+
+if(outputString.length===0){
     outputString =i;
     }
-fbResults.push(outputString);
+fbResults.push('outputString');
  
 
 // TODO: Create logic inside the `for` loop to calculate FizzBuzz.  This will
@@ -64,8 +65,8 @@ fbResults.push(outputString);
 
 // TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
 // into the variable `fbText`.
-for(let calue of fbResults){
-    fbText +value+'/n';
+for( let value of fbResults){
+    fbText += value +'/n';
 }
 
 
