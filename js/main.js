@@ -19,7 +19,7 @@ while(!isInteger){
         }
     }
     console.log=("maxNumber", maxNumber);
-
+}
 
 
 fbResults=[];
@@ -34,7 +34,7 @@ for (let i=1; i<=maxNumber;i++){
 outputString += "buzz";
 }
 
-//if(i 5 15){
+//if(i %5 15){
  //   outputString += "fizzbuzz";
 //}
 
