@@ -18,8 +18,8 @@ while(!isInteger){
         isInteger= Number.isSafeInteger(maxNumber) && maxNumber > 0; 
         }
     }
-    console.log=("maxNumber", maxNumber);
-}
+    console.log=("maxNumber",maxNumber);
+
 
 
 fbResults=[];
@@ -28,27 +28,24 @@ fbResults=[];
 for (let i=1; i<=maxNumber;i++){
   let outputString='';
   if(i % 3 ===0){
-      outputString +="fizz";
+     outputString +="fizz";
       } else
  if (i % 5===0){
 outputString += "buzz";
 }
 
 //if(i %5 15){
- //   outputString += "fizzbuzz";
+//outputString += "fizzbuzz";
 //}
 
 if(outputString.length===0){
-    outputString =i;
+    outputString=i;
     }
-fbResults.push('outputString');
- 
-
-
-
-
+fbResults.push(outputString);
+ }
+fbText='';
 for( let value of fbResults){
-    fbText += value +'/n';
+    fbText += value +'\n';
 }
 
 
